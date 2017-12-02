@@ -10,13 +10,30 @@
 
 </head>
 <body>
-  <h1>Welcome!</h1>
+  <h1>StudentZone</h1>
   <canvas id = "canvas1">
   </canvas>
 
-  <form id="testcalc" method="post">
-    <input type="text">
+  <form id="testcalc" method="get">
+    Points in Class (Your points/ total points):
+    <input type="number" name="num">
+    <input type="number" name="den">
+    <br><br>
+
+    Points in Test:
+    <input type="number" name="test">
+
+    <br><br>
+
+    Target Grade
+    <input type="number" name="target">
+
+    <br><br>
+    <input id="submit" type="submit" style="font-size: 24px" onclick="NeededGrade()">
+
   </form>
+
+  <p id="needed"></p>
 
   <div id = "navbar">
 
