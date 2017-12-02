@@ -1,0 +1,75 @@
+body{
+  background-color: rgb(155,210,220);
+  font-family: "Century Gothic";
+  font-variant: small-caps;
+  color: #FFF;
+}
+
+#navbar{
+  right: 40px;
+  position: fixed;
+  width: 25%;
+  float: right;
+}
+
+#intro{
+  left: 10px;
+  width: 65%;
+  float: left;
+}
+
+h1{
+  padding: 30px;
+}
+
+a{
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(100,120,190);
+    padding: 16px;
+    font-size: 16px;
+    font-family: "Century Gothic";
+    font-variant: small-caps;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(90,50,150);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    color: rgb(100,50,150);
+    position: absolute;
+    background-color: rgba(255, 255, 255, .8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin left: auto;
+    padding: 10px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*Login button*/
+#submit{
+  background-color: rgb(90,50,150);
+  font-family: "Century Gothic";
+  font-variant: small-caps;
+  color: #fff;
+  border-color: rgb(90,50,150);
+  padding: 10px;
+
+  text-shadow:none;
+}
