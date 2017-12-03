@@ -90,3 +90,5 @@ function ProCalc() {
 
     document.getElementById("time").innerHTML = "Time you should start: " + end + " days before due date <br> Which is: " + d;
   }
+
+  document.getElementById("col").src = "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwixq-6L1OzXAhXCk-AKHdJEAHAQjRwIBw&url=https%3A%2F%2Ffamilyshare.com%2F25336%2F10-procrastination-memes-that-keep-it-real&psig=AOvVaw1qU-56qWqeHhjURyms1wuB&ust=1512349775624741";
