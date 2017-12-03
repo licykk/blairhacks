@@ -85,18 +85,8 @@ function ProCalc() {
     end = 4;
   }
 
-  var d = new Date();
+  var d = duedate;
   d.setDate(d.getDate() - end);
-  console.log(d.toString());
 
-  // First of month
-  var c = new Date(2017,1,1); // 1 Feb -> 30 Jan
-  c.setDate(c.getDate() - end);
-  console.log(c.toString());
-
-  // First of year
-  var b = new Date(2018,0,1); // 1 Jan -> 30 Dec
-  b.setDate(b.getDate() - end);
-  console.log(b.toString());
     document.getElementById("time").innerHTML = "Time you should start: " + end + " days before due date <br> Which is: " + d;
   }
