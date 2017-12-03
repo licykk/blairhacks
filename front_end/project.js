@@ -65,3 +65,38 @@ function NeededGrade() {
     document.getElementById("needed").innerHTML = "Points needed on test: " + NeededGrade;
   }
 }
+
+function ProCalc() {
+  var duedate = new Date(document.getElementById("date").value);
+  var points = parseInt(document.getElementById("worth").value);
+  var subject = document.getElementById("class").value;
+
+  var today = new Date();
+  var timeDiff = Math.abs(duedate - today);
+  var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+  var end = 0;
+  if(points < 20){
+    end = 1;
+  }else if (points < 40 && points >= 20) {
+    end = 2;
+  }else if (points < 100 && points >= 40) {
+    end = 3;
+  }else if (points >= 100){
+    end = 4;
+  }
+
+  var d = new Date();
+  d.setDate(d.getDate() - end);
+  console.log(d.toString());
+
+  // First of month
+  var c = new Date(2017,1,1); // 1 Feb -> 30 Jan
+  c.setDate(c.getDate() - end);
+  console.log(c.toString());
+
+  // First of year
+  var b = new Date(2018,0,1); // 1 Jan -> 30 Dec
+  b.setDate(b.getDate() - end);
+  console.log(b.toString());
+    document.getElementById("time").innerHTML = "Time you should start: " + end + " days before due date <br> Which is: " + d;
+  }
